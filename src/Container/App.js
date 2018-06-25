@@ -29,7 +29,7 @@ class App extends Component {
     this.setState({searchfield: event.target.value})
   }
 
-  render() {
+   render() {
     const { characters, searchfield } = this.state;
     let filteredCharacters = characters.filter(person => {
       return person.name.toLowerCase().includes(searchfield.toLowerCase())
