@@ -8,11 +8,12 @@ for (var i = 1; i <= 88; i++) {
 }
 
 // push the results of the fetch into an empty array.
-// Urls.map(url => {
-// 	return (
-// 		fetch(url).then(response => response.json()).then(result => console.log(result.name))
-// 	);
-// });
+let testArray = [];
+Urls.map(url => {
+	return (
+		fetch(url).then(response => response.json()).then(result => testArray.push(result))
+	);
+});
 
 // characArray.map(person => console.log(person.name))
 

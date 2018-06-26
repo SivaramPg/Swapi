@@ -35,10 +35,11 @@ class App extends Component {
       return person.name.toLowerCase().includes(searchfield.toLowerCase())
     });
     return !characters.length ?
-      <h1 className = "tc bg-dark-red"> LOADING </h1> :
+      <h1 className = "tc ma5 pa5 f1 dark-red underline"> LOADING </h1> :
       (
-        <div className = "bg-blue">
-          <h1 className = "tc f1 b  underline ttu code red dim" > Star Wars </h1>
+        <div className = "bg-light-purple ma0 pa0">
+          <h1 className = "tc f1 b ma0 pa4 underline ttu code black" > Star Wars Characters </h1>
+          <p className = "tc">Fetched using Swapi.co</p>
           <SearchBox searchChange = {this.onSearchChange} />
           <Scroll>
             <CardList characters = {filteredCharacters} />
