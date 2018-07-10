@@ -18,11 +18,6 @@ const CardList = ( { characters } ) => {
                             eye_color = {characters[i].eye_color}
                             birth_year = {characters[i].birth_year}
                             gender = {characters[i].gender}
-                            homeworld = {characters[i].homeworld}
-                            films = {characters[i].films}
-                            species = {characters[i].species}
-                            vehicles = {characters[i].vehicles}
-                            starships = {characters[i].starships}
                         />
                     );
                 })
